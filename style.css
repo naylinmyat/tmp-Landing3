@@ -1,0 +1,844 @@
+/* Table of contents
+    01. font & reset css
+    02. Header
+    03. Hero Body
+    04. Brand Logo Group
+    05. Feature Section
+    06. Content 1
+    07. Content 2
+    08. Content 3
+    09. Factor
+    10. Testimonial
+    11. CTA
+    12. Footer
+    13. Header Mobile View 
+    14. Hero Body Mobile View
+    15. Brand Logo Group Mobile View
+    16. Feature Section Mobile View
+    17. Content 1 Mobile View
+    18. Content 2 Mobile View
+    19. Content 3 Mobile View
+    20. Factor Mobile View
+    21. Testimonial Mobile View
+    22. CTA Mobile View
+    23. Footer Mobile View */
+
+/* font & reset css start */
+:root{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+h5{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+p{
+    margin: 0;
+    font-weight: lighter;
+    color: rgb(107, 104, 104);
+}
+/* font & reset css end */
+
+#hero{
+    height: 100vh;
+    background-image: url(./images/BG\ \(1\).png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover,
+.login-and-signup-buttons .login-btn:hover,
+.login-and-signup-buttons .signup-btn:hover,
+.start-btn:hover{
+    color: black;
+    transition: all 0.5s;
+}
+.login-and-signup-buttons{
+    display: flex;
+    align-items: center;
+}
+.login-and-signup-buttons .login-btn{
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+.login-and-signup-buttons .signup-btn,
+.download-btn{
+    border: none;
+    background: #FD4C5C;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+nav .nav-content-mobile-view{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgb(125, 33, 179);
+    z-index: 10;
+}
+nav .nav-content-mobile-view .logo{
+    width: 30%;
+    margin-bottom: 1rem;
+}
+nav .nav-content-mobile-view .logo img{
+    width: 100%;
+}
+nav .nav-content-mobile-view a{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+nav .nav-content-mobile-view a:hover{
+    text-shadow: 4px 4px 2px rgba(0,0,0,1);
+    background:rgb(61, 16, 87);
+}
+nav .nav-content-mobile-view .login-btn,
+nav .nav-content-mobile-view .signup-btn{
+    border: none;
+    background: #FD4C5C;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    width: 40%;
+}
+nav .nav-content-mobile-view .login-btn{
+    background: rgba(72, 223, 34, 0.829);
+    margin-bottom: 1rem;
+}
+nav .nav-content-mobile-view .login-btn:hover,
+nav .nav-content-mobile-view .signup-btn:hover{
+    color: black;
+    transition: all 0.5s;
+}
+/* Header end */
+
+/* Hero Body start */
+.hero-body{
+    display: flex; 
+    align-items: center;
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+}
+.hero-body-content{
+    width: 50%;
+    color: white;
+    padding-bottom: 6%;
+}
+.hero-body-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;;
+}
+.hero-body-content p{
+    color: rgb(211, 207, 207);
+    margin-bottom: 1.5rem;
+}
+.hero-body .hero-body-content .btn-group{
+    display: flex;
+    width: 100%;
+}
+.hero-body .hero-body-content .btn-group a img{
+    width: 90%;
+}
+.hero-body-main-image{
+    width: 50%;
+    height: -webkit-fill-available;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+/* Hero Body end */
+
+/* Brand Logo Group start */
+.brand-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+} 
+.brand-logo img{
+    width: 17%;
+}
+/* Brand Logo Group end */
+
+/* Feature Section start */
+#feature-section{
+    background: #fcfaffe7;
+    padding: 6% 0;
+}
+.feature-text{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.features{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.features .groups{
+    width: 32%;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+}
+.features .groups img{
+    width: 20%;
+}
+.features .groups h5{
+    margin: 4% 0;
+}
+/* Feature Section end */
+
+/* Content 1 start */
+.first-content-section{
+    padding: 6% 0;
+}
+.first-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.first-content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-image: url(./images/Ellipse\ 127.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.first-content-img img{
+    width: 60%;
+}
+.first-content-section-text-and-button{
+    width: 40%;
+}
+.first-content-section-text-and-button .text-group{
+    padding-bottom: 6%;
+}
+.first-content-section-text-and-button .text-group-one{
+    padding-bottom: 10%;
+}
+.first-content-section-text-and-button .start-btn,
+.second-content-section-text-and-button .start-btn{
+    border: none;
+    background: #FD4C5C;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+}
+.first-content-section-text-and-button .start-btn:hover,
+.second-content-section-text-and-button .start-btn:hover{
+    color: black;
+    transition: all 0.5s;
+}
+/* Content 1 end */
+
+/* Content 2 start */
+.second-content-section{
+    background: #fcfaffe7;
+    padding: 3% 0;
+}
+.second-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.second-content-section-text-and-button{
+    width: 40%;
+}
+.second-content-section-text-and-button p{
+    padding-bottom: 6%;
+}
+.second-content img{
+    width: 60%;
+}
+/* Content 2 end */
+
+/* Content 3 start */
+.third-content-section{
+    background:  #ede9f1e7;
+}
+.third-content{
+    width: 100%;
+    padding: 6% 0;
+}
+.third-content h1{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 1rem auto;
+}
+.third-content p{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+#carouselExampleIndicators{
+    width: 96%;
+    margin: auto;
+    padding: 0 4%;
+}
+.images-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 4%;
+    align-items: center;
+}
+.images-container img{
+    padding: 8% 0;
+}
+.images-container img:hover{
+    padding-top: 0%;
+    transition: all 0.5s;
+}
+/* Content 3 end */
+
+/* Factor start */
+.factor{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 3.5% 0;
+}
+.factor img{
+    height: 50%;
+    margin-top: 0.8rem;
+    margin-right: 1.5rem;
+    width: 3rem;
+}
+.users,
+.download,
+.likes,
+.rating{
+    display: flex;
+    width: 22%;
+}
+.users-bulk,
+.download-bulk,
+.likes-bulk,
+.rating-bulk{
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+.factor .normal-text{
+    text-align: center;
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+/* Factor end */
+
+/* Testimonial start */
+.testimonial{
+    background:  #ede9f1e7;
+    padding: 6% 0 3% 0;
+}
+.testimonial-content{
+    width: 100%;
+    text-align: center;
+}
+.testimonial-content h1{
+    margin-bottom: 1%;
+    width: 50%;
+    margin: auto;
+}
+#carouselExampleControls{
+    width: 100%;
+    padding: 0 4%;
+}
+#carouselExampleControls .carousel-inner{
+    padding: 5% 8%;
+}
+.testimonial-slider-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.testimonial-slider-content div{
+    width: 31%;
+}
+.testimonial-slider-content div .review{
+    background: white;
+    padding: 7%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+}
+.testimonial-slider-content div h5{
+    font-weight: bold;
+}
+/* Testimonial end */
+
+/* CTA start */
+.CTA{
+    padding: 6% 0;
+    background-image: url(./images/BG\ \(2\).png);
+}
+.CTA-content{
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CTA-content p{
+    color: rgb(211, 207, 207);
+    width: 70%;
+    padding: 2% 0 4% 0;
+    text-align: center;
+}
+.CTA-content .btn-group{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.CTA-content .btn-group a img{
+    width: 90%;
+}
+/* CTA end */
+
+/* Footer start */
+.footer-section{
+    padding: 6% 0 0 0;
+}
+.footer-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+    border-bottom: 1px solid gray;
+}
+.footer-content .widget-one{
+    width: 32%;
+}
+.footer-content .widget-one p{
+    padding: 8% 0 6.5% 0;
+}
+.footer-content .widget-one .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.footer-content .widget-one .social a img{
+    width: 30%;
+}
+.footer-content .widget-two,
+.footer-content .widget-three{
+    width: 15%;
+}
+.footer-content .widget-two p,
+.footer-content .widget-three p{
+    padding: 11% 0;
+    line-height: 2.5;
+}
+.footer-content .widget-four{
+    width: 25%;
+}
+.footer-content .widget-four p{
+    padding: 9.5% 0 4% 0;
+    margin-bottom: 0;
+}
+.phone-number,
+.email{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4%;
+}
+.phone-number img,
+.email img{
+    width: 8%;
+}
+.phone-number span,
+.email span{
+    margin-left: 5%;
+    color: rgb(107, 104, 104);
+}
+.footer-text{
+    text-align: center;
+    padding: 1.2% 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+/* Footer end */
+
+
+
+
+@media (max-width: 900px){
+    :root{
+        font-size: 14px;
+    }
+}
+@media (max-width: 700px){
+    :root{
+        font-size: 12px;
+    }
+}
+@media (max-width: 600px){
+    :root{
+        font-size: 16px;
+    }
+    #hero{
+        height: auto;
+    }
+    /* Header Mobile View start */
+    .menu,
+    .login-and-signup-buttons{
+        display: none;
+    }
+    .menu-icon{
+        display: inline;
+    }
+    
+    .menu-icon,.menu-icon:before,.menu-icon:after{
+        width: 3rem;
+        height: 0.25rem;
+        background-color: #fff;
+        border-radius: 0.2rem;
+        -webkit-box-shadow: 1px 1px 2px rgba(30, 30, 30, 0.3);
+                box-shadow: 1px 1px 2px rgba(30, 30, 30, 0.3);
+        z-index: 99;
+    }
+    .menu-icon{
+        position: relative;
+        -webkit-transition: -webkit-transform 0.3s 0s;
+        transition: -webkit-transform 0.3s 0s;
+        transition: transform 0.3s 0s;
+        transition: transform 0.3s 0s, -webkit-transform 0.3s 0s;
+    }
+    .menu-icon:before,.menu-icon:after{
+        content: '';
+        width: 100%;
+        position: absolute;
+    }
+    .menu-icon:before{
+        bottom: 0.8rem;
+        -webkit-transition: bottom 0.3s 0.3s, -webkit-transform 0.3s 0s;
+        transition: bottom 0.3s 0.3s, -webkit-transform 0.3s 0s;
+        transition: bottom 0.3s 0.3s, transform 0.3s 0s;
+        transition: bottom 0.3s 0.3s, transform 0.3s 0s, -webkit-transform 0.3s 0s;
+    }
+    .menu-icon:after{
+        top: 0.8rem;
+        -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s 0s;
+        transition: top 0.3s 0.3s, -webkit-transform 0.3s 0s;
+        transition: top 0.3s 0.3s, transform 0.3s 0s;
+        transition: top 0.3s 0.3s, transform 0.3s 0s, -webkit-transform 0.3s 0s;
+      
+    }
+    #check:checked ~ .menu-icon{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: -webkit-transform 0.3s 0.3s;
+        transition: -webkit-transform 0.3s 0.3s;
+        transition: transform 0.3s 0.3s;
+        transition: transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+        position: fixed;
+        right: 10%;
+    }
+    #check:checked ~ .menu-icon:before{
+        bottom: 0;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: top 0.3s 0s,-webkit-transform 0.3s 0.3s;
+        transition: top 0.3s 0s,-webkit-transform 0.3s 0.3s;
+        transition: top 0.3s 0s,transform 0.3s 0.3s;
+        transition: top 0.3s 0s,transform 0.3s 0.3s,-webkit-transform 0.3s 0.3s;
+    }
+    #check:checked ~ .menu-icon:after{
+        top: 0;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: top 0.3s 0s,-webkit-transform 0.3s 0.3s;
+        transition: top 0.3s 0s,-webkit-transform 0.3s 0.3s;
+        transition: top 0.3s 0s,transform 0.3s 0.3s;
+        transition: top 0.3s 0s,transform 0.3s 0.3s,-webkit-transform 0.3s 0.3s;      
+    }
+    nav .nav-content-mobile-view{
+        display: flex;
+        right: -101%;
+        transition: all 0.8s;
+    }
+    #check:checked ~ .nav-content-mobile-view{
+        right: 0;
+        transition: all 0.8s;
+    }
+    #check:checked ~ .nav-content-mobile-view .logo{
+        transform: translateX(20%);
+        animation: logo-slide-in 0.6s ease 0.7s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view a:nth-child(2){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 1s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view a:nth-child(3){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 1.3s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view a:nth-child(4){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 1.6s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view a:nth-child(5){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 1.9s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view button:nth-child(6){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 2.2s forwards;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-content-mobile-view button:nth-child(7){
+        transform: translateX(20%);
+        animation: slide-in 0.6s ease 2.5s forwards;
+        opacity: 0;
+    }
+    @keyframes logo-slide-in {
+        50% {
+          transform: translate(-5rem);
+          opacity: 1;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }     
+    @keyframes slide-in {
+        50% {
+          transform: translate(-7%);
+          opacity: 1;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+    .navgation .nav-content{
+        display: none;
+    }
+    .navgation{
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+    /* Header Mobile View end */
+
+    /* Hero Body Mobile View start */
+    .hero-body{
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .hero-body-content{
+        width: 100%;
+    }
+    .hero-body img{
+        width: 100%;
+    }
+    /* Hero Body Mobile View end */
+
+    /* Brand Logo Group Mobile View start */
+    .brand-logo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand-logo img{
+        width: 80%;
+        padding: 8% 0;
+    }
+    /* Brand Logo Group Mobile View end */
+
+    /* Feature Section Mobile View start */
+    .feature-text{
+        width: 80%;
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .features .groups{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    /* Feature Section Mobile View end */
+
+    /* Content 1 Mobile View start */
+    .first-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-content-img{
+        width: 100%;
+        margin-bottom: 14%;
+    }
+    .first-content-section-text-and-button{
+        width: 100%;
+    }
+    /* Content 1 Mobile View end */
+
+    /* Content 2 Mobile View start */
+    .second-content{
+        flex-flow: column-reverse;
+    }
+    .second-content img{
+        width: 100%;
+    }
+    .second-content-section-text-and-button{
+        width: 100%;
+        text-align: center;
+    }
+    /* Content 2 Mobile View end */
+
+    /* Content 3 Mobile View start */
+    .images-container img:nth-child(2),
+    .images-container img:nth-child(3),
+    .images-container img:nth-child(4){
+        display: none;
+    }
+    .images-container img{
+        width: 100%;
+    }
+    /* Content 3 Mobile View end */
+
+    /* Factor Mobile View start */
+    .factor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .users,
+    .download,
+    .likes,
+    .rating{
+        padding: 5% 0;
+        justify-content: center;
+    }
+    /* Factor Mobile View end */
+
+    /* Testimonial Mobile View start */
+    .testimonial-slider-content div:nth-child(2),
+    .testimonial-slider-content div:nth-child(3){
+        display: none;
+    }
+    .testimonial-slider-content{
+        justify-content: center;
+    }
+    .testimonial-slider-content div{
+        width: 90%;
+    }
+    /* Testimonial Mobile View end */
+
+    /* CTA Mobile View start */
+    .CTA-content{
+        text-align: center;
+    }
+    .CTA-content p{
+        width: 100%;
+    }
+    /* CTA Mobile View end */
+
+    /* Footer Mobile View start */
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .widget-one,
+    .footer-content .widget-two,
+    .footer-content .widget-three,
+    .footer-content .widget-four{
+        width: 100%;
+    }
+    .footer-content .widget-two p,
+    .footer-content .widget-three p,
+    .footer-content .widget-four p{
+        padding: 5% 0;
+    }
+    .footer-content .widget-two{
+        padding-top: 15%;
+    }
+    .footer-content .widget-three,
+    .footer-content .widget-four{
+        padding-top: 10%;
+    }
+    /* Footer Mobile View end */
+}
