@@ -553,6 +553,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     }
     #hero{
         height: auto;
+        background-image: url(./images/BG\ \(5\).png);
     }
     /* Header Mobile View start */
     .menu,
@@ -712,6 +713,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     }
     .hero-body-content{
         width: 100%;
+        text-align: center;
     }
     .hero-body img{
         width: 100%;
@@ -774,7 +776,8 @@ nav .nav-content-mobile-view .signup-btn:hover{
     /* Content 3 Mobile View start */
     .images-container img:nth-child(2),
     .images-container img:nth-child(3),
-    .images-container img:nth-child(4){
+    .images-container img:nth-child(4),
+    .images-container img:nth-child(5){
         display: none;
     }
     .images-container img{
