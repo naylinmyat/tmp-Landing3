@@ -334,12 +334,12 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .third-content h1{
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto 1rem auto;
 }
 .third-content p{
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 #carouselExampleIndicators{
@@ -411,7 +411,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .testimonial-content h1{
     margin-bottom: 1%;
-    width: 50%;
+    width: 80%;
     margin: auto;
 }
 #carouselExampleControls{
