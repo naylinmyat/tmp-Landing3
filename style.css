@@ -339,7 +339,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .third-content p{
     text-align: center;
-    width: 50%;
+    width: 30%;
     margin: auto;
 }
 #carouselExampleIndicators{
@@ -478,7 +478,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     display: flex;
     justify-content: space-between;
     padding-bottom: 3%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(230, 229, 229);
 }
 .footer-content .widget-one{
     width: 32%;
@@ -715,7 +715,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     /* Hero Body Mobile View start */
     .hero-body{
         flex-direction: column;
-        padding-top: 10%;
+        padding: 10% 0;
     }
     .hero-body-content{
         width: 100%;
@@ -783,6 +783,10 @@ nav .nav-content-mobile-view .signup-btn:hover{
     /* Content 2 Mobile View end */
 
     /* Content 3 Mobile View start */
+    .third-content p{
+        width: 80%;
+    }
+
     .images-container img:nth-child(2),
     .images-container img:nth-child(3),
     .images-container img:nth-child(4),
