@@ -96,7 +96,7 @@ nav{
     border: none;
     background: transparent;
     color: white;
-    padding: 1rem;
+    padding: 0.6rem 2rem;
     cursor: pointer;
 }
 .login-and-signup-buttons .signup-btn,
@@ -857,8 +857,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
         padding-top: 10%;
     }
     .footer-text{
+        font-size: 1rem;
         text-align: start;
-        padding: 3% 0;
+        padding: 6% 0;
         margin-left: 10%;
     }
     /* Footer Mobile View end */
